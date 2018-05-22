@@ -1,0 +1,5 @@
+#!/bin/bash
+## cleaning script
+
+rm src/*.so
+rm src/*.o

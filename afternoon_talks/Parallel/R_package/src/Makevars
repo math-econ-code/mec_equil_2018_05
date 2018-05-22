@@ -1,0 +1,21 @@
+
+SDIR = .
+
+
+PKG_CXXFLAGS= $(CXX11STD) $(SHLIB_OPENMP_CXXFLAGS) -I$(SDIR)
+PKG_LIBS= $(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS)
+
+CXX_STD=CXX11
+
+#
+# sources and objects
+
+SOURCES_R= ./coord_jacobi.cpp ./coord_jacobi_R.cpp
+OBJECTS_R= $(SOURCES_R:.cpp=.o)
+
+#
+
+all: $(SHLIB) libMEC.Rcpp$(SHLIB_EXT)
+
+libMEC.Rcpp$(SHLIB_EXT): $(OBJECTS_R)
+	$(SHLIB_CXX11LD) $(SHLIB_OPENMP_CXXFLAGS) $(SHLIB_CXX11LDFLAGS) -o MEC$(SHLIB_EXT) $(OBJECTS_R) $(ALL_LIBS)

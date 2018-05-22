@@ -1,0 +1,5 @@
+useDynLib(MEC)
+
+importFrom(Rcpp, evalCpp)
+
+export(coord_jacobi)
