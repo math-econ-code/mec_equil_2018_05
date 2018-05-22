@@ -1,5 +1,5 @@
 
-# on your compter
+# on your computer
 
 export MY_NYU_USERNAME=koh215
 export MYDIR=$BB/trame_talks/alfred_class/2018/code/problem_1/HPC/cpp
