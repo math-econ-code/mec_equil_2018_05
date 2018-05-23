@@ -10,6 +10,10 @@ HEADER_DIR = $(SDIR)/include
 
 # shared library name and flags
 
+ifeq ($(ARMA_INCLUDE_PATH),)
+	ARMA_INCLUDE_PATH=$(HEADER_DIR)
+endif
+
 # general flags
 CXXFLAGS = $(CXX_STD) $(OPT_FLAGS) -I$(ARMA_INCLUDE_PATH) -I$(HEADER_DIR)
 
