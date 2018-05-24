@@ -1,0 +1,2 @@
+link to the R tensorflow stuff:
+https://tensorflow.rstudio.com/tensorflow/
