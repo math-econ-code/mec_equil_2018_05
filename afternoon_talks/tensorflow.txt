@@ -2,4 +2,4 @@ link to the R tensorflow stuff:
 https://tensorflow.rstudio.com/tensorflow/
 
 NYU HPC tutorial:
-https://wikis.nyu.edu/display/NYUHPC/Slurm+Tutorial#SlurmTutorial-Checkjobstatus-[squeue,sstat,sacct]
+https://wikis.nyu.edu/display/NYUHPC/Slurm+Tutorial
